@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { FaSearch } from 'react-icons/fa';
 import s from './Searchbar.module.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 class Searchbar extends Component {
   state = {
@@ -17,7 +20,7 @@ class Searchbar extends Component {
     const { onSubmit } = this.props;
     e.preventDefault();
     if (!query.trim()) {
-      alert('Please, enter search query.');
+      toast('Please, enter search query.');
       return;
     }
     onSubmit(query);

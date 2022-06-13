@@ -6,6 +6,7 @@ import Loader from 'components/Loader';
 import ImageGallery from 'components/ImageGallery';
 import Error from 'components/Error';
 import Button from 'components/Button';
+import { ToastContainer } from 'react-toastify';
 
 
 const PER_PAGE = 12;
@@ -126,7 +127,7 @@ class App extends Component {
           </div>
         )}
 
-        
+      <ToastContainer /> 
       </div>
     );
   }

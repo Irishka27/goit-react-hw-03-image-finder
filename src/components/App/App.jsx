@@ -112,7 +112,6 @@ class App extends Component {
      
       <div>
         <Searchbar onSubmit={this.handleSearchFormSubmit} />
-        {status === 'idle' && <></>}
         {status === 'pending' && <Loader />}
         {status === 'rejected' && <Error message={error.message} />}
         {status === 'resolved' && (
@@ -127,7 +126,7 @@ class App extends Component {
           </div>
         )}
 
-      <ToastContainer /> 
+      <ToastContainer autoClose={3000}/> 
       </div>
     );
   }

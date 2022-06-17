@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FaSearch } from 'react-icons/fa';
 import s from './Searchbar.module.css';
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 
 class Searchbar extends Component {
